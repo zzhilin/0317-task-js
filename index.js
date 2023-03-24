@@ -11,7 +11,7 @@ function isInViewport(element) {
   );
 }
 
-function handleScroll() {
+function handleClick() {
   elements.forEach((element) => {
     if (isInViewport(element)) {
       element.classList.add("visible");
@@ -23,4 +23,4 @@ function handleScroll() {
   });
 }
 
-window.addEventListener("click", handleScroll);
+window.addEventListener("click", handleClick);
